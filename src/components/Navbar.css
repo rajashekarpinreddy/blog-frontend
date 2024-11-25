@@ -1,0 +1,66 @@
+/* Ensure the navbar spans the full width and aligns items properly */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.8rem 1rem;
+}
+
+/* Styling the brand logo and text */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff !important;
+    display: flex;
+    align-items: center;
+}
+
+/* Styling the navigation links */
+.nav-link {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+.nav-link:hover {
+    color: #d1d1d1 !important;
+}
+
+/* Active navigation link */
+.nav-link.active {
+    font-weight: bold;
+    color: #f8f9fa !important;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Responsive hamburger menu */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Adjust navbar collapse for better alignment */
+.collapse.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* Styling the logo */
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 0.5rem;
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+    .nav-link {
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+}
